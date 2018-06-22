@@ -1,0 +1,20 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.diefferson.testefeatures.featureone">
+
+    <application>
+        <activity android:name=".FeatureOneActivity">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="diefferson.com.br"
+                    android:scheme="https"
+                    android:pathPrefix="/featureOne" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
